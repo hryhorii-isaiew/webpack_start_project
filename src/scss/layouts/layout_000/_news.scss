@@ -1,0 +1,257 @@
+.news-box {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.blog-title {
+  color: $white;
+  border-bottom: 3px solid #a62f2f;
+  padding: 10px;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  background-color: $silver;
+  border: 1px solid $black;
+  border-radius: 10px;
+  overflow: hidden;
+  @include e(logo) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  @include e(logo-box) {
+  }
+  @include e(text) {
+    padding: 0 12px;
+    text-align: center;
+  }
+  @include e(title) {
+    font-size: 1rem;
+    margin-bottom: auto;
+    text-align: center;
+    &:hover {
+      color: black;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, red, red 50%, black 50%);
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: all 0.9s cubic-bezier(0, 0, 0.23, 1);
+      word-break: break-word;
+    }
+  }
+  @include e(subtitle) {
+    font-size: 1rem;
+  }
+}
+
+.stream-box {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  //grid-auto-rows: 200px;
+  grid-gap: 10px;
+}
+.stream {
+  position: relative;
+  @include e(link) {
+    width: 100%;
+    height: 100%;
+  }
+  @include e(vid) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @include e(btn) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 68px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+  }
+  @include e(btn-icon) {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    color: #212121;
+    opacity: 0.8;
+    &:hover {
+      color: #ff0000;
+      opacity: 1;
+    }
+  }
+}
+
+.gallery-box {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  @include e(item) {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+      z-index: 2;
+      .gallery-box__title {
+        opacity: 1;
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+  }
+  @include e(logo) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  @include e(title) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    color: $white;
+  }
+}
+
+.prizes {
+  margin: 0;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  @include e(box) {
+    display: flex;
+    flex-direction: column;
+    background: silver;
+    padding: 20px;
+  }
+  @include e(box-logo) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  @include e(box-title) {
+    font-size: 1rem;
+    margin-bottom: auto;
+  }
+  @include e(box-btn) {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 15px 20px;
+    color: $white;
+    background-color: grey;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.35s;
+    &:hover {
+      background-color: $red;
+      color: black;
+    }
+  }
+}
+
+.sale-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 5px;
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    z-index: 1;
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in-out;
+  }
+  @include m(w) {
+    background: white;
+  }
+  @include m(s) {
+    background: black;
+    color: white;
+  }
+  @include e(title) {
+    font-size: 1rem;
+    text-align: center;
+  }
+  @include e(subtitle) {
+    font-size: 1rem;
+    text-align: center;
+  }
+  @include e(btn) {
+    padding: 6px 0;
+    line-height: 1.42857143;
+  }
+  @include e(button) {
+    width: 100%;
+    height: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+}
+
+.servers {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 20px;
+  @include e(logo) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+    margin-bottom: 10px;
+  }
+  @include e(link) {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+#scrollToTopBtn {
+  width: 47px;
+  height: 47px;
+  align-items: center;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 30px;
+  font-weight: 900px;
+  border: 2px solid $white;
+  outline: none;
+  color: $white;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #0af3f3;
+}

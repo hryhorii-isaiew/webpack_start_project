@@ -1,0 +1,54 @@
+.footer {
+  background-color: $black;
+  width: 100%;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px 20px 20px;
+  @include e(left-icon) {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+    margin: 15px 0;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  @include e(left-title) {
+    color: $white;
+    font-size: 1.2rem;
+  }
+  @include e(left-link) {
+    margin-right: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $white;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @include e(right) {
+    color: $white;
+  }
+  @include e(right-title) {
+    color: $white;
+    text-align: center;
+  }
+  @include e(right-subtitle) {
+    list-style-type: none;
+    color: $white;
+  }
+  @include e(right-link) {
+    padding: 5px;
+    color: $white;
+    text-decoration: none;
+  }
+}

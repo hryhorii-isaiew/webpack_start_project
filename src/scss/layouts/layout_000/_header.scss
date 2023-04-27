@@ -1,0 +1,85 @@
+.header {
+  background-color: black;
+  background: url(#{$imagesPath}banner.jpg) no-repeat;
+  background-size: cover;
+  @include e(top) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+  }
+  @include e(logo) {
+    color: $white;
+  }
+  @include e(title) {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  @include e(subtitle) {
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  @include e(social) {
+    order: -1;
+  }
+  @include e(link) {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $white;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @include e(search) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //position: relative;
+    background-color: $white;
+
+    height: 35px;
+    border-radius: 40px;
+    padding: 5px;
+  }
+  @include e(search-btn) {
+    color: black;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+  }
+  @include e(search-text) {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  @include e(btn) {
+    margin-bottom: 10px;
+  }
+  @include e(btn-link) {
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 15px 20px;
+    color: $white;
+    background-color: $red;
+    border-radius: 5px;
+    &:hover {
+      color: black;
+    }
+  }
+  @include e(navbar) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}

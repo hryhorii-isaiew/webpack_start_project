@@ -1,0 +1,59 @@
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  gap: 20px;
+}
+
+.slider {
+  position: relative;
+  padding: 0 50px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  margin: -30px 0 0 0;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+}
+.slick-prev {
+  left: 0;
+  background: url(#{$imagesPath}circle-left.svg) 0 0/100% no-repeat;
+}
+.slick-prev:hover {
+  scale: 1.4;
+  fill: $white;
+}
+.slick-next {
+  right: 0;
+  background: url(#{$imagesPath}circle-right.svg) 0 0/100% no-repeat;
+}
+.slick-next:hover {
+  scale: 1.4;
+}
+
+.slider-blog {
+  min-width: 0px;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 10px;
+  overflow: hidden;
+  @include e(logo) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  @include e(title) {
+    margin-bottom: auto;
+    text-align: center;
+  }
+  @include e(subtitle) {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

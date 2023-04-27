@@ -1,0 +1,154 @@
+.footer {
+  background-color: $black;
+  width: 100%;
+  @include e(link) {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+  }
+  @include e(link-hub) {
+    text-decoration: none;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 30px 20px 20px;
+  @include e(left) {
+    height: 270px;
+    text-align: center;
+  }
+  @include e(left-icon) {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+    margin: 15px 0;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  @include e(left-title) {
+    color: $white;
+    font-size: 1.2rem;
+  }
+  @include e(left-link) {
+    margin-right: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $white;
+    transition: all 0.2s;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  @include e(left-mail) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 230px;
+    height: 45px;
+    margin: 10px;
+    border-radius: 5px;
+    background: white;
+  }
+  @include e(left-email) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+  }
+  @include e(left-btn) {
+    width: 230px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 15px 20px;
+    color: $white;
+    background-color: $red;
+    border-radius: 5px;
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  @include e(middle) {
+    color: $white;
+  }
+  @include e(middle-title) {
+    color: $white;
+    text-align: center;
+  }
+  @include e(middle-subtitle) {
+    list-style-type: none;
+    color: $white;
+  }
+  @include e(middle-link) {
+    padding: 5px;
+    color: $white;
+    text-decoration: none;
+  }
+
+  @include e(right) {
+    color: $white;
+  }
+  @include e(right-title) {
+    color: $white;
+    text-align: center;
+  }
+  @include e(right-subtitle) {
+    list-style-type: none;
+    color: $white;
+  }
+  @include e(right-link) {
+    padding: 5px;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.icon-rss:hover {
+  color: #ff6f00;
+  transition: all 0.2s;
+}
+.icon-dribbble:hover {
+  color: #ffff00;
+  transition: all 0.2s;
+}
+.icon-vimeo:hover {
+  color: #00bbff;
+  transition: all 0.2s;
+}
+.icon-twitch:hover {
+  color: #a907a9;
+  transition: all 0.2s;
+}
+.icon-steam:hover {
+  color: skyblue;
+  transition: all 0.2s;
+}
+.icon-google-plus:hover {
+  color: #ef0808;
+  transition: all 0.2s;
+}
+.icon-twitter:hover {
+  color: #0770f8;
+  transition: all 0.2s;
+}
+.icon-facebook:hover {
+  color: #0770f8;
+  transition: all 0.2s;
+}
+.icon-instagram:hover {
+  color: #ed0ccc;
+  transition: all 0.2s;
+}

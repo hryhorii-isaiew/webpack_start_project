@@ -1,17 +1,11 @@
 @import "base/index";
 
-@import "layouts/layout_000/index";
+@import "vendor/index";
 
-@media only screen and (min-width: 420px) {
-  @import "layouts/layout_420/index";
-}
+@import "layouts/layout_000/index";
 
 @media only screen and (min-width: 576px) {
   @import "layouts/layout_576/index";
-}
-
-@media only screen and (min-width: 640px) {
-  @import "layouts/layout_640/index";
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,4 +14,8 @@
 
 @media only screen and (min-width: 992px) {
   @import "layouts/layout_992/index";
+}
+
+@media only screen and (min-width: 1200px) {
+  @import "layouts/layout_1200/index";
 }

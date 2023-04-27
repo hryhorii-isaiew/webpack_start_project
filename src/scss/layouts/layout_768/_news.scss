@@ -1,0 +1,29 @@
+.news {
+  @include e(logo) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  @include e(logo-box) {
+  }
+  @include e(text) {
+  }
+  @include e(title) {
+    font-size: 1.5rem;
+  }
+  @include e(subtitle) {
+    font-size: 1rem;
+  }
+}
+
+.stream {
+  @include e(vid) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+}

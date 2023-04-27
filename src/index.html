@@ -8,21 +8,1234 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Index.html</h1>
-      <a href="about.html">About.html</a>
+    
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__logo">
+            <h1 class="header__title">Game News</h1>
+            <p class="header__subtitle">Gaming Theme</p>
+          </div>
 
-      <form>
-        <div>
-          <label for=""> Name</label>
-          <input type="text" />
+          <div class="header__social">
+            <a
+              class="header__link icon-rss"
+              href="https://www.ukraine.com.ua/blog/marketing/chto-takoe-rss-i-kak-ego-ispolzovat.html"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-dribbble"
+              href="https://dribbble.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-vimeo"
+              href="https://vimeo.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-twitch"
+              href="https://www.twitch.tv/?lang=ru"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-steam"
+              href="https://store.steampowered.com/?l=russian"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-google-plus"
+              href="https://coba.tools/google"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-twitter"
+              href="https://twitter.com/?lang=ru"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-facebook"
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="header__link icon-instagram"
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+            ></a>
+          </div>
+
+          <div class="header__search">
+            <input class="header__search-text" type="text" placeholder="Search...">
+            <a class="header__search-btn icon-search" href="#"></a>
+          </div>
+
+          <div class="header__btn">
+            <button  class="header__btn-link  icon-user" href="#">Login</button>
+          </div>
         </div>
-        <div><button>Click me</button></div>
-      </form>
+
+        <!--   DESKTOP menu START   -->
+        <nav class="menu">
+        <ul class="menu-desktop">
+            <li class="has-submenu__menu">
+                <a href="#home">Home</a>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Sections</a>
+                <ul>
+                    <li><a href="#news">News Blog</a></li>
+                    <li><a href="#streams">Streams</a></li>
+                    <li><a href="#server">Game Servers</a></li>
+                    <li><a href="#expect">Expected Games</a></li>
+                    <li><a href="#user">User's Gallery</a></li>
+                    <li><a href="#prize">Prize Catalog</a></li>
+                    <li><a href="#disc">Game Discounts</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">About the Project</a></li>
+                    <li><a href="#">Advertising on the website</a></li>
+                    <li><a href="#">RSS Feeds</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Site rules</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        </nav>
+        <div id="mobile-menu-container" class="menu-button-box">
+          <a href="#" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <!--   DESKTOP menu END   -->
+
+        <!--   Mobile menu START   -->
+        <div class="dark-overlay"></div>
+
+        <div class="mobile-menu">
+        <a href="#" class="menu-button in-mobile active">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <nav class="mobile-navigation active">
+            <ul>
+                <li class="has-submenu__menu">
+                    <a class="is-submenu" href="#home">Home</a>
+                </li>
+                <li class="has-submenu">
+                    <a class="is-submenu" href="#">Sections</a>
+                    <ul>
+                        <li><a href="#news">News Blog</a></li>
+                        <li><a href="#streams">Streams</a></li>
+                        <li><a href="#server">Game Servers</a></li>
+                        <li><a href="#expect">Expected Games</a></li>
+                        <li><a href="#user">User's Gallery</a></li>
+                        <li><a href="#prize">Prize Catalog</a></li>
+                        <li><a href="#disc">Game Discounts</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a class="is-submenu" href="#">About Us</a>
+                    <ul>
+                        <li><a href="#">About the Project</a></li>
+                        <li><a href="#">Advertising on the website</a></li>
+                        <li><a href="#">RSS Feeds</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Site rules</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+        </div>
+      </div>
+        <!-- /   Mobile menu END  -->
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <h2 class="blog-title" id="news">News Blog</h2>
+        <section class="news-box">
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_00(1280x720).jpeg" alt="" />
+          </div>
+            <h3 class="news__title">
+              Resident Evil 4 remake released on PC and consoles
+            </h3>
+            <div class="news__text">
+              <p class="news__subtitle">
+                Today, March 24, Resident Evil 4, a remake of the original 2005
+                game, was officially released on PlayStation 5, PlayStation4,
+                Xbox Series X/S, PC on Steam.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_01(1280x720).jpeg" alt="" />
+            </div>
+            
+            <h3 class="news__title">
+              First 17 minutes of Diablo 4 beta gameplay
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                IGN has released a gameplay video showing the first seventeen
+                minutes of the Diablo 4 beta, available today to those who
+                pre-order the game.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_02(1280x720).jpeg" alt="" />
+            </div>
+            <h3 class="news__title">
+              In the demo of the remake of Resident Evil 4 found the opportunity
+              to unlock the secret weapon
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                A playable demo of Resident Evil 4 Remake became available
+                yesterday on both consoles and PC. She offers some secrets like
+                a secret weapon that can be unlocked.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_03(1280x720).jpeg" alt="" />
+            </div>
+            <h3 class="news__title">
+              Resident Evil fans celebrate the franchise's 27th anniversary
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                On March 22, 1996, the original Resident Evil game was released
+                in Japan. Created by director Shinji Mikami, the game quickly
+                became a must-buy on the original PlayStation.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_04(1280x720).jpeg" alt="" />
+            </div>
+
+            <h3 class="news__title">
+              Senua's Saga: Hellblade 2 will "push the boundaries" of facial
+              animation in video games, creators say
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                The studio claims that the sequel will "push the boundaries" in
+                this area, and these graphic footage is a good confirmation of
+                this statement.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_05(1280x720).jpeg" alt="" />
+            </div>
+
+            <h3 class="news__title">
+              Max Payne 1 and 2 remake fully funded by Rockstar Games
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                Last April, developer Remedy Entertainment took everyone by
+                surprise by officially announcing that a remake of Max Payne and
+                Max Payne 2 is in production.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_06(1280x720).jpeg" alt="" />
+            </div>
+
+            <h3 class="news__title">
+              Nemesis will find you everywhere in Resident Evil 3 Remake
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                The main innovation - Nemesis can now break even into shelter
+                rooms, where you used to calmly catch your breath. Mister X from
+                Resident Evil 2 Remake couldn't do that. It turns out that the
+                main character Jill Valentine will be in constant danger.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_07(1280x720).jpeg" alt="" />
+            </div>
+
+            <h3 class="news__title">The Elder Scrolls 4: Oblivion Turns 17</h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                Highly anticipated by fans still fascinated by the wonders of
+                The Elder Scrolls III Morrowind, Oblivion has taken fans to
+                Cyrodiil, a province of Tamriel, with the protagonist imprisoned
+                in one of the imperial prison cells at the start of the
+                adventure.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_08(1280x720).jpeg" alt="" />
+            </div>
+
+            <h3 class="news__title">
+              Marvel's Spider-Man 2 and Wolverine may have new dialogue
+              technology
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                Lead engine programmer Elan Raskin revealed that the studio's
+                next game, which will most likely be Marvel's Spider-Man 2 and
+                possibly even Wolverine, will use "very cool" dialogue
+                technology.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_09(1280x720).jpeg" alt="" />
+            </div>
+
+            <h3 class="news__title">
+              The Witcher 3: Wild Hunt - Complete Edition Update 4.02 Released
+              with Performance Improvements
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                A few months have passed since the release of The Witcher 3:
+                Wild Hunt - Complete Edition on consoles and PC, and the
+                developers at CD Projekt RED have dedicated a fresh update to
+                fixing various issues and optimizing the game's performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_10(1280x720).jpeg" alt="" />
+            </div>
+            <h3 class="news__title">
+              James Gunn warns against 'Guardians of the Galaxy 3' spoilers
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                Guardians of the Galaxy Vol. 3 writer and director James Gunn
+                warned fans to beware of plot spoilers closer to the film's
+                premiere.“If you want to avoid spoilers, it would be wise to
+                watch what you read online. However, I don't think your
+                enjoyment of Guardians will be spoiled. Even if you read them."
+              </p>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news__logo-box">
+              <img class="news__logo" src="./i/top_11(1280x720).jpeg" alt="" />
+            </div>
+
+            <h3 class="news__title">
+              "South Park" released an episode about artificial intelligence,
+              which was written by ChatGPT.
+            </h3>
+
+            <div class="news__text">
+              <p class="news__subtitle">
+                In early February, one of the most popular animated series for
+                adults "South Park" returned to the air. In the new episodes of
+                the show continue to make fun of the most relevant topics, not
+                bypassing the modern trend of neural networks.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <h2 class="blog-title" id="streams">Streams</h2>
+        <div class="stream-box">
+          <div class="stream">
+            <iframe class="stream__link"  src="https://www.youtube.com/embed/6pyytrJx38I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="stream">
+            <iframe class="stream__link"  src="https://www.youtube.com/embed/txJIb_4mpmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="stream">
+            <iframe class="stream__link"  src="https://www.youtube.com/embed/DHYeHMDUXEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="stream">
+            <iframe class="stream__link"  src="https://www.youtube.com/embed/5Q8LLd75p0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="stream">
+            <iframe class="stream__link" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="stream">
+            <iframe class="stream__link" src="https://www.youtube.com/embed/AbrO5ndOGm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="stream">
+            <a href="https://www.youtube.com/embed/L75MU8b8ogU" target="_blank">
+              <picture>
+                <source
+                  srcset="
+                    https://img.youtube.com/vi_webp/L75MU8b8ogU/maxresdefault.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="stream__vid"
+                  src="https://img.youtube.com/vi/L75MU8b8ogU/maxresdefault.jpg"
+                  alt="[СТРИМ] В ожидании Diablo 4"
+                />
+              </picture>
+            </a>
+            <button class="stream__btn" aria-label="watch video">
+              <svg class="stream__btn-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#youtube-play" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="stream">
+            <a href="https://www.youtube.com/embed/Bn622x4pGyg" target="_blank">
+              <picture>
+                <source
+                  srcset="
+                    https://img.youtube.com/vi_webp/Bn622x4pGyg/maxresdefault.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="stream__vid"
+                  src="https://img.youtube.com/vi/Bn622x4pGyg/maxresdefault.jpg"
+                  alt="Mafia: The City of Lost Heaven ► СТРИМ #4"
+                />
+              </picture>
+            </a>
+            <button class="stream__btn" aria-label="watch video">
+              <svg class="stream__btn-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#youtube-play" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="stream">
+            <a href="https://www.youtube.com/embed/lxoTzhB1_k0" target="_blank">
+              <picture>
+                <source
+                  srcset="
+                    https://img.youtube.com/vi_webp/lxoTzhB1_k0/maxresdefault.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="stream__vid"
+                  src="https://img.youtube.com/vi/lxoTzhB1_k0/maxresdefault.jpg"
+                  alt="It Takes Two ► КООП-СТРИМ #1 (КУПЛИНОВ СЛЕВА)"
+                />
+              </picture>
+            </a>
+            <button class="stream__btn" aria-label="watch video">
+              <svg class="stream__btn-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#youtube-play" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="stream">
+            <a href="https://www.youtube.com/embed/C3bw-r1uNN8" target="_blank">
+              <picture>
+                <source
+                  srcset="
+                    https://img.youtube.com/vi_webp/C3bw-r1uNN8/maxresdefault.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="stream__vid"
+                  src="https://img.youtube.com/vi/C3bw-r1uNN8/maxresdefault.jpg"
+                  alt="It Takes Two ► КООП-СТРИМ #1 (КУПЛИНОВ СЛЕВА)"
+                />
+              </picture>
+            </a>
+            <button class="stream__btn" aria-label="watch video">
+              <svg class="stream__btn-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#youtube-play" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="stream">
+            <a href="https://www.youtube.com/embed/n498O19z4S0" target="_blank">
+              <picture>
+                <source
+                  srcset="
+                    https://img.youtube.com/vi_webp/n498O19z4S0/maxresdefault.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="stream__vid"
+                  src="https://img.youtube.com/vi/n498O19z4S0/maxresdefault.jpg"
+                  alt="It Takes Two ► КООП-СТРИМ #1 (КУПЛИНОВ СЛЕВА)"
+                />
+              </picture>
+            </a>
+            <button class="stream__btn" aria-label="watch video">
+              <svg class="stream__btn-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#youtube-play" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="stream">
+            <a  href="https://www.youtube.com/embed/EJIP_WXvaHQ" target="_blank">
+              <picture>
+                <source
+                  srcset="
+                    https://img.youtube.com/vi_webp/EJIP_WXvaHQ/maxresdefault.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="stream__vid"
+                  src="https://img.youtube.com/vi/EJIP_WXvaHQ/maxresdefault.jpg"
+                  alt="It Takes Two ► КООП-СТРИМ #1 (КУПЛИНОВ СЛЕВА)"
+                />
+              </picture>
+            </a>
+            <button class="stream__btn" aria-label="watch video">
+              <svg class="stream__btn-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#youtube-play" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="server">
+          <h2 class="blog-title" id="server">Game Servers</h2>
+          <section class="servers">
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_00.jpg" alt="Warcraft III">
+              <p class="servers__link"><a class="servers__link"  href="#">Warcraft III: TFT</a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_01.jpg" alt="Diablo II">
+              <p class="servers__link"><a class="servers__link" href="#">Diablo II: LoD
+              </a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_02.jpg" alt="Quake 2">
+              <p class="servers__link"><a class="servers__link" href="#">
+                Grand Theft Auto: Five
+              </a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_03.jpg" alt="Quake 3 Arena">
+              <p class="servers__link" ><a class="servers__link" href="#">Quake 3 Arena
+              </a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_04.jpg" alt="GTA: San Andreas">
+              <p class="servers__link" ><a class="servers__link" href="#">Grand Theft Auto: San Andreas
+              </a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_05.jpg" alt="UT 2004">
+              <p class="servers__link" ><a class="servers__link" href="#">UT 2004
+              </a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_06.jpg" alt="Neverwinter Nights">
+              <p class="servers__link"><a class="servers__link" href="#">Neverwinter Nights
+              </a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_07.jpg" alt="Minecraft">
+              <p class="servers__link"><a class="servers__link" href="#">Minecraft
+              </a></p>
+            </div>
+
+            <div class="servers__box">
+              <img class="servers__logo" src="i/ser_08.jpg" alt="Painkiller">
+              <p class="servers__link"><a class="servers__link" href="#">Painkiller
+              </a></p>
+            </div>
+          </section>
+        </div>
+
+
+        <div class="game-box">
+          <h2 class="blog-title" id="expect">Expected Games</h2>
+          
+          <section class="slider">
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_00.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Atlas Fallen</h3>
+              <p class="slider-blog__subtitle">Release Date: Summer 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_01.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Starfield</h3>
+              <p class="slider-blog__subtitle">Release Date: 06.09.2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_02.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Assassin's Creed: Mirage</h3>
+              <p class="slider-blog__subtitle">Release Date: spring 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_03.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Hollow Knight: Silksong</h3>
+              <p class="slider-blog__subtitle">Release Date: 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_04.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Street Fighter 6</h3>
+              <p class="slider-blog__subtitle">Release Date: 02.06.2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_05.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Diablo 4</h3>
+              <p class="slider-blog__subtitle">Release Date: 06.06.2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_06.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">
+                Suicide Squad: Kill The Justice League
+              </h3>
+              <p class="slider-blog__subtitle">Release Date: 02.02.2024</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_07.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Marvel's Spider-Man 2</h3>
+              <p class="slider-blog__subtitle">Release Date: Autumn 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_08.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Forza Motorsport</h3>
+              <p class="slider-blog__subtitle">Release Date: Spring 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_09.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">
+                The Dark Pictures: Directive 8020
+              </h3>
+              <p class="slider-blog__subtitle">Release Date: 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_10.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Grand Theft Auto 6</h3>
+              <p class="slider-blog__subtitle">Release Date: Soon</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_11.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Dead Island 2</h3>
+              <p class="slider-blog__subtitle">Release Date: 21.04.2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_12.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Star Wars Jedi: Survivor</h3>
+              <p class="slider-blog__subtitle">Release Date: 28.04.2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_13.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Skull and Bones</h3>
+              <p class="slider-blog__subtitle">Release Date: 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_14.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Avatar: Frontiers of Pandora</h3>
+              <p class="slider-blog__subtitle">Release Date: 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_15.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Alan Wake 2</h3>
+              <p class="slider-blog__subtitle">Release Date: 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_16.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">RoboCop: Rogue City</h3>
+              <p class="slider-blog__subtitle">Release Date: September 2023</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_17.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Mass Effect 5</h3>
+              <p class="slider-blog__subtitle">Release Date: soon</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_18.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Assassin's Creed: Codename Hexe</h3>
+              <p class="slider-blog__subtitle">Release Date: 2025</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_19.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Assassin's Creed: Codename RED</h3>
+              <p class="slider-blog__subtitle">Release Date: 2024</p>
+            </div>
+
+            <div class="slider-blog">
+              <img
+                class="slider-blog__logo"
+                src="i/mid_20.jpeg"
+                alt="Atlas Fallen"
+              />
+              <h3 class="slider-blog__title">Beyond Good & Evil 2</h3>
+              <p class="slider-blog__subtitle">Release Date: 2023</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="gallery">
+          <h2 class="blog-title" id="user">User's Gallery</h2>
+          <section class="gallery-box">
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_00.jpg"
+                alt="Cyberpunk 2077"
+              />
+              <p class="gallery-box__title">Cyberpunk 2077</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_01.jpg"
+                alt="Cyberpunk 2077"
+              />
+              <p class="gallery-box__title">Cyberpunk 2077</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_02.jpg"
+                alt="Cyberpunk 2077"
+              />
+              <p class="gallery-box__title">Cyberpunk 2077</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_03.jpg"
+                alt="The Last of Us: Part 1"
+              />
+              <p class="gallery-box__title">The Last of Us: Part 1</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_04.jpg"
+                alt="The Last of Us: Part 1"
+              />
+              <p class="gallery-box__title">The Last of Us: Part 1</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_05.jpg"
+                alt="Resident Evil 4"
+              />
+              <p class="gallery-box__title">Resident Evil 4</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_06.jpg"
+                alt="Resident Evil 4"
+              />
+              <p class="gallery-box__title">Resident Evil 4</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_07.jpg"
+                alt="Marvel's Spider-Man"
+              />
+              <p class="gallery-box__title">Marvel's Spider-Man</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_08.jpg"
+                alt="Marvel's Spider-Man"
+              />
+              <p class="gallery-box__title">Marvel's Spider-Man</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_09.jpg"
+                alt="The Witcher 3: Wild Hunt"
+              />
+              <p class="gallery-box__title">The Witcher 3: Wild Hunt</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_10.jpg"
+                alt="The Witcher 3: Wild Hunt"
+              />
+              <p class="gallery-box__title">The Witcher 3: Wild Hunt</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_11.jpg"
+                alt="The Witcher 3: Wild Hunt"
+              />
+              <p class="gallery-box__title">Resident Evil 2</p>
+            </div>
+            
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_12.jpg"
+                alt="The Witcher 3: Wild Hunt"
+              />
+              <p class="gallery-box__title">Resident Evil 2</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_13.jpg"
+                alt="The Witcher 3: Wild Hunt"
+              />
+              <p class="gallery-box__title">Days Gone</p>
+            </div>
+
+            <div class="gallery-box__item">
+              <img
+                class="gallery-box__logo"
+                src="i/gal_14.jpg"
+                alt="The Witcher 3: Wild Hunt"
+              />
+              <p class="gallery-box__title">Days Gone</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="prize">
+          <h2 class="blog-title" id="prize">Prize Catalog</h2>
+          <section class="prizes">
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_00.jpeg" alt="Streamer kit">
+              <h3 class="prizes__box-title">Streamer kit - microphone video and capture device</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_01.jpeg" alt="Diablo IV">
+              <h3 class="prizes__box-title">Diablo IV + pre-order and access to the beta test!</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_02.jpeg" alt="Gaming laptop Thunderobot 911 Air D">
+              <h3 class="prizes__box-title">Gaming laptop Thunderobot 911 Air D</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_03.jpeg" alt="Beyerdynamic MMX 150 Gray">
+              <h3 class="prizes__box-title">Gaming headset Beyerdynamic MMX 150 Gray</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_04.jpeg" alt="SVEN RX-G890">
+              <h3 class="prizes__box-title">SVEN RX-G890 - vertical gaming mouse</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_05.jpeg" alt="2200 Overwatch Coins">
+              <h3 class="prizes__box-title">2200 Overwatch Coins</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_06.jpeg" alt="HyperX Cloud Stinger Core">
+              <h3 class="prizes__box-title">HyperX Cloud Stinger Core 7.1 Gaming Headset</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_07.jpeg" alt="HONOR 30 Pro+">
+              <h3 class="prizes__box-title">HONOR 30 Pro+ Titanium Silver</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+
+            <div class="prizes__box">
+              <img class="prizes__box-logo" src="i/prize_08.jpeg" alt="Realme 9 5G">
+              <h3 class="prizes__box-title">Smartphone Realme 9 5G</h3>
+              <button class="prizes__box-btn">Win</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="sale">
+          <h2 class="blog-title" id="disc">Game Discounts</h2>
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">Euro Truck Simulator 2</h3>
+            <p class="sale-box__subtitle">-75%</p>
+          </div>
+          
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">Red Dead Redemption 2 (PC)</h3>
+            <p class="sale-box__subtitle">-20%</p>
+          </div>
+
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">Far Cry 5</h3>
+            <p class="sale-box__subtitle">-25%</p>
+          </div>
+
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">Mafia II: Definitive Edition (PC)</h3>
+            <p class="sale-box__subtitle">-33%</p>
+          </div>
+
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">American Truck Simulator</h3>
+            <p class="sale-box__subtitle">-75%</p>
+          </div>
+
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">BioShock Infinite: Burial at Sea Episode 1</h3>
+            <p class="sale-box__subtitle">-50%</p>
+          </div>
+
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">BioShock: The Collection (PC)</h3>
+            <p class="sale-box__subtitle">-44%</p>
+          </div>
+
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">RESIDENT EVIL 7 Gold Edition (PC)</h3>
+            <p class="sale-box__subtitle">-58%</p>
+          </div>
+
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">Kingdom Come: Deliverance</h3>
+            <p class="sale-box__subtitle">-22%</p>
+          </div>
+
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">DOOM Eternal (PC)</h3>
+            <p class="sale-box__subtitle">-50%</p>
+          </div>
+
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">Far Cry 4. Standard Edition</h3>
+            <p class="sale-box__subtitle">-66%</p>
+          </div>
+
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">Tom Clancy's Ghost Recon Wildlands</h3>
+            <p class="sale-box__subtitle">-67%</p>
+          </div>
+
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">Assassin's Creed IV Black Flag</h3>
+            <p class="sale-box__subtitle">-66%</p>
+          </div>
+
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">No Man's Sky</h3>
+            <p class="sale-box__subtitle">-50%</p>
+          </div>
+
+          <div class="sale-box sale-box_w">
+            <h3 class="sale-box__title">Metal Gear Solid V: The Phantom Pain</h3>
+            <p class="sale-box__subtitle">-35%</p>
+          </div>
+
+          <div class="sale-box sale-box_s">
+            <h3 class="sale-box__title">	
+              The Witcher: Enhanced Edition Director's Cut</h3>
+            <p class="sale-box__subtitle">-25%</p>
+          </div>
+          
+          <div class="sale-box__btn">
+            <button class="sale-box__button">All Discounts</button>
+          </div>
+        </div>
+
+        <div>
+          <button id="scrollToTopBtn">&#11014;</button>
+        </div>
+        
+      </div>
     </div>
+
+    
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <div class="footer-box__left">
+            <div class="footer-box__left-icon">
+              <span>16</span>
+              <span>+</span>
+            </div>
+            <div class="footer-box__left-title">
+              <p>&#169 All rights reserved</p>
+            </div>
+            <div class="footer-box__left-link">
+              <a
+              class="footer-box__left-link icon-rss"
+              href="https://www.ukraine.com.ua/blog/marketing/chto-takoe-rss-i-kak-ego-ispolzovat.html"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-dribbble"
+              href="https://dribbble.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-vimeo"
+              href="https://vimeo.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-twitch"
+              href="https://www.twitch.tv/?lang=ru"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-steam"
+              href="https://store.steampowered.com/?l=russian"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-google-plus"
+              href="https://coba.tools/google"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-twitter"
+              href="https://twitter.com/?lang=ru"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-facebook"
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="footer-box__left-link icon-instagram"
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+            ></a>
+            </div>
+            <div class="footer-box__left-mail">
+              
+                <form id="my-form">
+                  <label for="email" aria-placeholder="Enter Email..."></label>
+                  <input class="footer-box__left-email"  type="email" id="email" name="email" required>
+                  <br>
+                  <button class="footer-box__left-btn" id="submit-btn" type="submit" disabled>Subscribe</button>
+                </form>
+            </div>
+          </div>
+          
+          <div class="footer-box__middle">
+            <h3 class="footer-box__middle-title">Sections</h3>
+            <ul class="footer-box__middle-subtitle">
+              <li class="footer-box__middle-link"><a class="footer-box__middle-link" href="#news">News Blog</a></li>
+              <li class="footer-box__middle-link"><a class="footer-box__middle-link" href="#streams">Streams</a></li>
+              <li class="footer-box__middle-link"><a class="footer-box__middle-link" href="#server">Game Servers</a></li>
+              <li class="footer-box__middle-link"><a class="footer-box__middle-link" href="#expect">Expected Games</a></li>
+              <li class="footer-box__middle-link"><a class="footer-box__middle-link" href="#user">User's Gallery</a></li>
+              <li class="footer-box__middle-link"><a class="footer-box__middle-link" href="#prize">Prize Catalog</a></li>
+              <li class="footer-box__middle-link"><a class="footer-box__middle-link" href="$disc">Game Discounts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-box__right">
+            <h3 class="footer-box__right-title">About Us</h3>
+            <ul class="footer-box__right-subtitle">
+              <li class="footer-box__right-link"><a class="footer-box__right-link" href="#">About the Project</a></li>
+              <li class="footer-box__right-link"><a class="footer-box__right-link" href="#">Advertising on the website</a></li>
+              <li class="footer-box__right-link"><a class="footer-box__right-link" href="#">RSS Feeds</a></li>
+              <li class="footer-box__right-link"><a class="footer-box__right-link" href="#">Terms of Use</a></li>
+              <li class="footer-box__right-link"><a class="footer-box__right-link" href="#">Site rules</a></li>
+              <li class="footer-box__right-link"><a class="footer-box__right-link" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__link">
+        <p>Powered by <a class="footer__link-hub" href="https://github.com/hryhorii-isaiew">Hryhorii Isaiew.</a> 2023</p>
+      </div>
+    </footer>
 
     <!--  JavaScript here -->
     <!-- <script src="js/app.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

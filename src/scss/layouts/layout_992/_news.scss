@@ -1,0 +1,110 @@
+.news {
+  @include e(logo) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  @include e(logo-box) {
+  }
+  @include e(text) {
+  }
+  @include e(title) {
+    font-size: 1.5rem;
+  }
+  @include e(subtitle) {
+    font-size: 1rem;
+  }
+}
+
+.stream-box {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.prize {
+  width: 65.66%;
+  float: left;
+}
+
+.prizes {
+  margin: 0;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  @include e(box) {
+    background: silver;
+    padding: 20px;
+  }
+  @include e(box-logo) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  @include e(box-title) {
+    font-size: 1rem;
+  }
+  @include e(box-btn) {
+    width: 100%;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 15px 20px;
+
+    border-radius: 5px;
+  }
+}
+
+.sale {
+  width: 33.33%;
+  float: right;
+}
+.sale-box {
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+  @include m(w) {
+    background: white;
+  }
+  @include m(s) {
+    background: black;
+    color: white;
+  }
+  @include e(title) {
+    font-size: 1rem;
+    text-align: center;
+  }
+  @include e(subtitle) {
+    font-size: 1rem;
+    text-align: center;
+  }
+  @include e(btn) {
+    padding: 6px 0;
+    line-height: 1.42857143;
+  }
+  @include e(button) {
+    width: 100%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+}
+.server {
+  margin: 0;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 20px;
+}
